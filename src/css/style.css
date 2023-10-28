@@ -1,0 +1,1318 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+header {
+	height: 80px;
+}
+header section.wrapper {
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header section.wrapper h1.left {
+	width: 70px;
+	height: 51px;
+}
+header section.wrapper h1.left a {
+	width: 150px;
+	height: 71px;
+}
+header section.wrapper h1.left a img {
+	width: 130px;
+	height: 51px;
+}
+header section.wrapper nav.middle {
+}
+header section.wrapper nav.middle ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+header section.wrapper nav.middle ul li {
+	margin-right: 25px;
+}
+header section.wrapper nav.middle ul li:last-child {
+	margin-right: 0;
+}
+header section.wrapper nav.middle ul li a {
+}
+header section.wrapper ul.right {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+header section.wrapper ul.right li {
+	margin-right: 25px;
+	margin-top: 18px;
+}
+header section.wrapper ul.right li:first-child {
+	height: 20px; 
+}
+header section.wrapper ul.right li:last-child {
+	margin-right: 0;
+	background: #ffdddd ;
+	height: 36px;
+	display: flex;
+	position: relative;
+	bottom: 8px;
+	border-radius: 10px;
+}
+header section.wrapper ul.right li a {
+}
+header section.wrapper ul.right li a.button {
+	margin-top: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+	color: #ff0000;
+}
+section.spotlight {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+	justify-content: space-between;
+    width: 100%;
+}
+section.spotlight section.wrapper {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 300%;
+}
+section.spotlight div.left {
+	width: 50%;
+}
+section.spotlight div.left h1 {
+	font-size: 60px;
+	font-weight: bold;
+	margin-top: 110px;
+    width: 550px;
+}
+section.spotlight div.left p {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+    width: 450px;
+}
+section.spotlight div.left form {
+	display: flex;
+	border: 2px solid #000;
+	border-radius: 12px;
+	width: 330px;
+	height: 51px;
+	margin-top: 50px;
+}
+section.spotlight div.left form input {
+	margin-left: 15px;
+}
+section.spotlight div.left form ul li {
+	background: #00f;
+	height: 51px;
+	width: 131px;
+	position: relative;
+	left: 37px;
+	bottom: 2px;
+	border-radius: 12px;
+}
+section.spotlight div.left form ul li a {
+	position: relative;
+	top: 13.5px;
+	left: 20px;
+	color: #fff;
+}
+section.spotlight div.right {
+	display: flex;
+}
+section.spotlight div.right div.content {
+	position: relative;
+}
+section.spotlight  section.wrapper div.right div.content div.container img.two {
+	width: 10px;
+	display: inline-block;
+	margin-top: 43.5px;
+	margin-left: 46.5px;
+	position: absolute;
+	bottom: -25;
+	right: 45px;
+	z-index: 6;
+    filter: invert(100%);
+}
+section.spotlight section.wrapper div.right div.content div.container {
+	background: #f70;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+    position: relative;
+	left: 310px;
+    bottom: 45px;
+}
+section.spotlight section.wrapper div.right div.content img.three {
+	display: inline-block;
+	position: relative;
+	bottom: 70px;
+	right: 50px;
+	width: 801px;
+}
+section.spotlight section.wrapper div.right div.content img.one {
+	display: inline-block;
+	position: absolute;
+	bottom: 528px;
+	right: 504px;
+    z-index: 6;
+}
+section.brands {
+	text-align: center;
+}
+section.brands section.wrapper {
+}
+section.brands section.wrapper div.container {
+	margin-top: 60px;
+}
+section.brands section.wrapper div.container h3 {
+	font-size: 20px;
+	font-weight: 600;
+	width: 60%;
+	margin: 0 auto 30px;
+}
+section.brands section.wrapper img {
+	max-width: 100%;
+	margin-right: 60px;
+	display: inline-block;
+}
+section.highlights_one {
+    margin-top: 80px;
+    height: 600px;
+}
+section.highlights_one section.wrapper {
+}
+section.highlights_one section.wrapper section.item {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+section.highlights_one section.wrapper section.item div.image_container {
+    width: 900px;
+    margin-right: -90px;
+    margin-left: 90px;
+}
+section.highlights_one section.wrapper section.item div.image_container img {
+    width: 100%;
+    display: block;
+}
+section.highlights_one section.wrapper div.content_box {
+    width: 75%;
+    height: 750px;
+    margin-left: 270px;
+}
+section.highlights_one section.wrapper div.content_box div.right {
+}
+section.highlights_one section.wrapper div.content_box div.icon {
+    background: #f70;
+    width: 50px;
+    height: 50px;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.1);
+    margin-top: -20px;
+}
+section.highlights_one section.wrapper div.content_box div.icon img.three{
+    width: 20px;
+    height: 20px;
+    margin-top: 14.5px;
+    margin-left: 15.5px;
+}
+section.highlights_one section.wrapper div.content_box h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+section.highlights_one section.wrapper div.content_box p.first {
+    font-weight: bold;
+    margin-top: 25px;
+}
+section.highlights_one section.wrapper div.content_box ul {
+}
+section.highlights_one section.wrapper div.content_box ul li {
+    background: #0f0fff;
+    width: 130px;
+    height: 45px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 13px;
+}
+section.highlights_one section.wrapper div.content_box ul li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 23.5px;
+}
+section.highlights_one section.wrapper div.content_box div.content {
+    display: flex;
+}
+section.highlights_one section.wrapper div.content_box div.content div.line {
+    border-bottom: 2px solid #ccc;
+    margin-top: 30px;
+    width: 5px;
+    margin-right: 3px;
+}
+section.highlights_one section.wrapper div.content_box div.content div.line:last-child {
+    margin-right: 0;
+}
+section.highlights_one section.wrapper div.content_box p.last {
+    color: grey;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 20px;
+}
+section.highlights_one section.wrapper div.content_box .role {
+    display: flex;
+    flex-wrap: wrap;
+}
+section.highlights_one section.wrapper div.content_box div.container {
+    display: flex;
+}
+section.highlights_one section.wrapper div.content_box div.container span.role {
+    color: grey;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+section.highlights_one section.wrapper div.content_box div.container p.role {
+    color: grey;
+    font-size: 15px;
+    margin-top: 17px;
+}
+section.highlights_one section.wrapper div.content_box img.role {
+    margin-top: 20px;
+    width: 90px;
+}
+section.highlights_two {
+    margin-top: -80px;
+    height: 110vh;
+    background: #f7f9f9;
+    width: 1500px;
+}
+section.highlights_two section.wrapper {
+}
+section.highlights_two section.wrapper section.item {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+}
+section.highlights_two section.wrapper section.item div.image_container {
+    width: 900px;
+    margin-right: -90px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+section.highlights_two section.wrapper section.item div.image_container img {
+    width: 100%;
+    display: block;
+}
+section.highlights_two section.wrapper div.content_box {
+    width: 75%;
+    height: 750px;
+    margin-left: 270px;
+}
+section.highlights_two section.wrapper div.content_box div.right {
+}
+section.highlights_two section.wrapper div.content_box div.icon {
+    background: #ffdd33;
+    width: 50px;
+    height: 50px;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+section.highlights_two section.wrapper div.content_box div.icon img.six{
+    width: 20px;
+    height: 20px;
+    margin-top: 14.5px;
+    margin-left: 14.5px;
+    z-index: 1;
+}
+section.highlights_two section.wrapper div.content_box h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+section.highlights_two section.wrapper div.content_box p.first {
+    font-weight: bold;
+    margin-top: 25px;
+}
+section.highlights_two section.wrapper div.content_box ul {
+}
+section.highlights_two section.wrapper div.content_box ul li {
+    background: #0f0fff;
+    width: 130px;
+    height: 45px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 13px;
+}
+section.highlights_two section.wrapper div.content_box ul li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 23.5px;
+}
+section.highlights_two section.wrapper div.content_box div.content {
+    display: flex;
+}
+section.highlights_two section.wrapper div.content_box div.content div.line {
+    border-bottom: 2px solid #ccc;
+    margin-top: 30px;
+    width: 5px;
+    margin-right: 3px;
+}
+section.highlights_two section.wrapper div.content_box div.content div.line:last-child {
+    margin-right: 0;
+}
+section.highlights_two section.wrapper div.content_box p.last {
+    color: grey;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 20px;
+}
+section.highlights_two section.wrapper div.content_box .role {
+    display: flex;
+    flex-wrap: wrap;
+}
+section.highlights_two section.wrapper div.content_box div.container {
+    display: flex;
+}
+section.highlights_two section.wrapper div.content_box div.container span.role {
+    color: grey;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+section.highlights_two section.wrapper div.content_box div.container p.role {
+    color: grey;
+    font-size: 15px;
+    margin-top: 17px;
+}
+section.highlights_two section.wrapper div.content_box img.role {
+    margin-top: 20px;
+    width: 90px;
+}
+section.highlights_three {
+    margin-top: 80px;
+    height: 600px;
+    width: 1500px;
+}
+section.highlights_three section.wrapper {
+}
+section.highlights_three section.wrapper section.item {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+section.highlights_three section.wrapper section.item div.image_container {
+    width: 900px;
+    margin-right: -120px;
+    margin-left: 120px;
+}
+section.highlights_three section.wrapper section.item div.image_container img {
+    width: 100%;
+    display: block;
+}
+section.highlights_three section.wrapper div.content_box {
+    width: 600px;
+    height: 750px;
+    margin-left: 270px;
+}
+section.highlights_three section.wrapper div.content_box div.right {
+}
+section.highlights_three section.wrapper div.content_box div.icon {
+    background: #00dd00;
+    width: 50px;
+    height: 50px;
+    border-radius: 21px;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.1);
+    margin-top: -20px;
+}
+section.highlights_three section.wrapper div.content_box div.icon img.four {
+    width: 20px;
+    height: 20px;
+    margin-top: 14.5px;
+    margin-left: 15.5px;
+}
+section.highlights_three section.wrapper div.content_box h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+section.highlights_three section.wrapper div.content_box p.first {
+    font-weight: bold;
+    margin-top: 25px;
+}
+section.highlights_three section.wrapper div.content_box ul {
+}
+section.highlights_three section.wrapper div.content_box ul li {
+    background: #0f0fff;
+    width: 130px;
+    height: 45px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 13px;
+}
+section.highlights_three section.wrapper div.content_box ul li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 23.5px;
+}
+section.highlights_three section.wrapper div.content_box div.content {
+    display: flex;
+}
+section.highlights_three section.wrapper div.content_box div.content div.line {
+    border-bottom: 2px solid #ccc;
+    margin-top: 30px;
+    width: 5px;
+    margin-right: 3px;
+}
+section.highlights_three section.wrapper div.content_box div.content div.line:last-child {
+    margin-right: 0;
+}
+section.highlights_three section.wrapper div.content_box p.last {
+    color: grey;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 20px;
+}
+section.highlights_three section.wrapper div.content_box .role {
+    display: flex;
+    flex-wrap: wrap;
+}
+section.highlights_three section.wrapper div.content_box div.container {
+    display: flex;
+}
+section.highlights_three section.wrapper div.content_box div.container span.role {
+    color: grey;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+section.highlights_three section.wrapper div.content_box div.container p.role {
+    color: grey;
+    font-size: 15px;
+    margin-top: 17px;
+}
+section.highlights_three section.wrapper div.content_box img.role {
+    margin-top: 20px;
+    width: 90px;
+}
+section.pricing {
+    width: 100%;
+    margin-top: 80px;
+    height: 110vh;
+}
+section.pricing section.wrapper {
+}
+section.pricing section.wrapper section.top {
+    width: 600px;
+}
+section.pricing section.wrapper section.top h3 {
+    width: 600px;
+    margin-left: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+section.pricing section.wrapper section.bottom {
+    display: flex;
+    margin-top: 70px;
+}
+section.pricing section.wrapper section.bottom div.left {
+    position: relative;
+}
+section.pricing section.wrapper section.bottom div.left img.review {
+    width: 400px;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+section.pricing section.wrapper section.bottom div.left div.item1 {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 344px;
+    left: 325px;
+    border-radius: 50%;
+} 
+section.pricing section.wrapper section.bottom div.left div.item1 img.play {
+    position: absolute;
+    left: 26px;
+    top: 23px;
+}
+section.pricing section.wrapper section.bottom div.left div.item2 {
+    background: #fff;
+    width: 110px;
+    height: 50px;
+    position: absolute;
+    bottom: 105px;
+    left: 20px;
+    border-radius: 10px;
+}
+section.pricing section.wrapper section.bottom div.left div.item2 img {
+    position: absolute;
+    left: 38.5px;
+    top: 9px;
+}
+section.pricing section.wrapper section.bottom div.left h5 {
+    font-weight: bold;
+    font-size: 20.5px;
+    margin-top: 10px;
+}
+section.pricing section.wrapper section.bottom div.middle {
+    position: relative;
+}
+section.pricing section.wrapper section.bottom div.middle img.review {
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+section.pricing section.wrapper section.bottom div.middle div.item1 {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 344px;
+    left: 330px;
+    border-radius: 50%;
+}
+section.pricing section.wrapper section.bottom div.middle div.item1 img.play {
+    position: absolute;
+    left: 26px;
+    top: 23px;
+}
+section.pricing section.wrapper section.bottom div.middle div.item2 {
+    background: #fff;
+    width: 110px;
+    height: 50px;
+    position: absolute;
+    bottom: 105px;
+    left: 28px;
+    border-radius: 10px;
+}
+section.pricing section.wrapper section.bottom div.middle div.item2 img {
+    width: 100px;
+    height: 31px;
+    margin-top: 9px;
+    margin-left: 3.5px;
+}
+section.pricing section.wrapper section.bottom div.middle h5 {
+    font-weight: bold;
+    font-size: 20.5px;
+    margin-top: 10px;
+}
+section.pricing section.wrapper section.bottom div.right {
+    position: relative;
+}
+section.pricing section.wrapper section.bottom div.right img.review {
+    width: 400px;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+section.pricing section.wrapper section.bottom div.right div.item1 {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 344px;
+    left: 330px;
+    border-radius: 50%;
+}
+section.pricing section.wrapper section.bottom div.right div.item1 img.play {
+    position: absolute;
+    left: 26px;
+    top: 23px;
+}
+section.pricing section.wrapper section.bottom div.right div.item2 {
+    background: #fff;
+    width: 110px;
+    height: 50px;
+    position: absolute;
+    bottom: 105px;
+    left: 29px;
+    border-radius: 10px;
+}
+section.pricing section.wrapper section.bottom div.right div.item2 img {
+    margin-left: 13px;
+    padding-top: 14.5px;
+}
+section.pricing section.wrapper section.bottom div.right h5 {
+    font-weight: bold;
+    font-size: 20.5px;
+    margin-top: 10px;
+}
+section.resources {
+    height: 105vh;
+}
+section.resources section.wrapper {
+}
+section.resources section.wrapper section.content_box {
+    text-align: center;
+}
+section.resources section.wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto 0;
+    margin-left: 110px;
+    margin-top: -100px;
+}
+section.resources section.wrapper ul li.first {
+    width: 48%;
+    text-align: left;
+    margin-right: 100px;
+    position: relative;
+}
+section.resources section.wrapper ul li.first img.one {
+    border-radius: 7px;
+}
+section.resources section.wrapper ul li.first div.container {
+    width: 121px;
+    height: 76px;
+    background: #fff;
+    position: absolute;
+    bottom: 179px;
+    left: 20px;
+    border-radius: 13px;
+}
+section.resources section.wrapper ul li.first div.container img.two {
+    display: inline-block;
+    width: 105px;
+    height: 54px;
+    margin-top: 11.5px;
+    margin-left: 8.5px;
+}
+section.resources section.wrapper ul li.first h5 {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 17px;
+}
+section.resources section.wrapper ul li.first h5 b.one {
+    position: relative;
+    left: 2.5px;
+}
+section.resources section.wrapper ul li.first h5 b.two {
+    position: relative;
+    right: 1.5px;
+}
+section.resources section.wrapper ul li.first h5 b.three {
+    position: relative;
+    right: 3px;
+}
+section.resources section.wrapper ul li.first span.role {
+}
+section.resources section.wrapper ul li.first span.role h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+section.resources section.wrapper ul li.first span.role p.one {
+    color: grey;
+    font-size: 13px;
+}
+section.resources section.wrapper ul li.first span.role p.two {
+    font-weight: bold;
+    font-size: 14px;
+}
+section.resources section.wrapper ul li.last {
+    width: 48%;
+    text-align: left;
+    position: relative;
+}
+section.resources section.wrapper ul li.last img.one {
+    border-radius: 7px;
+}
+section.resources section.wrapper ul li.last div.container {
+    width: 121px;
+    height: 76px;
+    background: #fff;
+    position: absolute;
+    bottom: 179px;
+    left: 20px;
+    border-radius: 13px;
+}  
+section.resources section.wrapper ul li.last div.container img.two {
+    display: inline-block;
+    width: 91px;
+    height: 56px;
+    margin-top: 9.5px;
+    margin-left: 17.5px;
+}
+section.resources section.wrapper ul li.last h5 {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 17px;
+}
+section.resources section.wrapper ul li.last span.role {
+}
+section.resources section.wrapper ul li.last span.role h6 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+section.resources section.wrapper ul li.last span.role p.one {
+    font-size: 13px;
+    color: grey;
+}
+section.resources section.wrapper ul li.last span.role p.two {
+    font-weight: bold;
+    font-size: 14px;
+}
+section.features {
+    height: 1750px;
+    background: #f9f9f9;
+}
+section.features section.wrapper {
+}
+section.features section.wrapper div.top {
+    text-align: center;
+}
+section.features section.wrapper div.top h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 275px;
+    margin-left: 70px;
+    position: relative;
+    top: 50px;
+}
+section.features section.wrapper div.first {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 300px;
+    margin-right: 240px;
+}
+section.features section.wrapper div.first div.one {
+    position: relative;
+    left: -90px;
+    width: 400px;
+}
+section.features section.wrapper div.first div.one img {
+    width: 300px;
+    height: 225px;
+    margin-left: 30px;
+}
+section.features section.wrapper div.first div.one div.item {
+    display: flex;
+}
+section.features section.wrapper div.first div.one h5 {
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+section.features section.wrapper div.first div.one  div.item p {
+    padding-left: 60px;
+    font-weight: bold;
+    width: 350px;
+}
+section.features section.wrapper div.first div.one div.item div.lines {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -400px;
+    left: 50px;
+}
+section.features section.wrapper div.first div.one div.item div.lines div.line {
+    background: lightgrey;
+    width: 1.5px;
+    height: 5px;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+section.features section.wrapper div.first div.two {
+    position: relative;
+    right: 4px;
+    width: 400px;
+}
+section.features section.wrapper div.first div.two img {
+    width: 300px;
+    height: 225px;
+}
+section.features section.wrapper div.first div.two div.item {
+    display: flex;
+}
+section.features section.wrapper div.first div.two h5 {
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+section.features section.wrapper div.first div.two div.item p {
+    margin-left: 70px;
+    font-weight: bold;
+    width: 350px;
+}
+section.features section.wrapper div.first div.two div.item div.lines {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -390px;
+    left: 80px;
+}
+section.features section.wrapper div.first div.two div.item div.lines div.line {
+    background: lightgrey;
+    width: 1.5px;
+    height: 5px;
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+section.features section.wrapper div.first div.three {
+    position: relative;
+    left: 80px;
+    right: 0;
+    width: 400px;
+}
+section.features section.wrapper div.first div.three img {
+    width: 300px;
+    height: 225px;
+}
+section.features section.wrapper div.first div.three h5 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+section.features section.wrapper div.first div.three p {
+    font-weight: bold;
+    width: 350px;
+}
+section.features section.wrapper div.second {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 160px;
+}
+section.features section.wrapper div.second {
+    height: 600px;
+}
+section.features section.wrapper div.second div.four {
+    width: 600px;
+    height: 150vh;
+    position: relative;
+    right: 185px;
+    top: 200px;
+}
+section.features section.wrapper div.second div.four img {
+    width: 300px;
+    height: 225px;
+}
+section.features section.wrapper div.second div.four h5 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+section.features section.wrapper div.second div.four p {
+    font-weight: bold;
+}
+section.features section.wrapper div.second div.line {
+}
+section.features section.wrapper div.second div.five {
+    width: 600px;
+    height: 150vh;
+    position: relative;
+    right: 20px;
+    top: 200px;
+}
+section.features section.wrapper div.second div.five img {
+    width: 300px;
+    height: 225px;
+}
+section.features section.wrapper div.second div.five h5 {
+    font-size: 27px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+section.features section.wrapper div.second div.five p {
+    font-weight: bold;
+}
+section.features section.wrapper div.second div.line {
+}
+section.features section.wrapper div.second div.six {    
+    width: 600px;
+    height: 150vh;
+    position: relative;
+    left: 160px;
+    top: 200px;
+}
+section.features section.wrapper div.second div.six img {
+    width: 300px;
+    height: 225px;
+    margin-right: 900px;
+}
+section.features section.wrapper div.second div.six h5 {
+    margin-right: 300px;
+    font-size: 27px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+section.features section.wrapper div.second div.six p {
+    font-weight: bold;
+    margin-right: 300px;
+}
+section.features section.wrapper div.bottom {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    right: -6.7px;
+    left: 6.75px;
+    top: 5950px;
+}
+section.features section.wrapper div.bottom div.content {
+    background: #fff;
+    position: relative;
+    right: 219px;
+    top: 20px;
+    z-index: 1;
+    background: #fff;
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+    border-radius: 17px;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.05);
+}
+section.features section.wrapper div.bottom div.content img {
+    margin-top: 12px;
+    width: 14px;
+    height: 14px;
+}
+section.features section.wrapper div.bottom div.container {
+    width: 550px;
+    height: 100px;
+    background: #bed5f3;
+    display: flex;
+    position: absolute;
+    left: 420px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.1);
+}
+section.features section.wrapper div.bottom div.container p {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-weight: 550;
+}
+section.features section.wrapper div.bottom div.container ul {
+}
+section.features section.wrapper div.bottom div.container ul li {
+    position: absolute;
+    left: 399px;
+    top: 21px;
+    background: #00f;
+    width: 110px;
+    height: 50px;
+    border-radius: 12px;
+}
+section.features section.wrapper div.bottom div.container ul li a {
+    position: relative;
+    top: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+section.solutions {
+    height: 150vh;
+}
+section.solutions section.wrapper {
+}
+section.solutions section.wrapper div.top {
+    text-align: center;
+}
+section.solutions section.wrapper div.top h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+section.solutions section.wrapper div.bottom {
+    display: flex;
+    margin-left: 39px;
+    margin-top: 50px;
+}
+section.solutions section.wrapper div.bottom div.left {
+    background: #bed5f3;
+    margin-right: 20px;
+    text-align: center;
+    width: 370px;
+    height: 550px;
+}
+section.solutions section.wrapper div.bottom div.left div.item {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+}
+section.solutions section.wrapper div.bottom div.left div.item img {
+    margin-top: 10px;
+    width: 30px;
+}
+section.solutions section.wrapper div.bottom div.left h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+section.solutions section.wrapper div.bottom div.left p {
+    font-weight: bold;
+}
+section.solutions section.wrapper div.bottom div.left ul {
+}
+section.solutions section.wrapper div.bottom div.left ul li {
+    background: #00f;
+    width: 115px;
+    height: 40px;
+    margin-left: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 9px;
+}
+section.solutions section.wrapper div.bottom div.left ul li a {
+    color: #fff;
+    position: relative;
+    top: 8px;
+}
+section.solutions section.wrapper div.bottom div.left img {
+    margin-top: 40px;
+}
+section.solutions section.wrapper div.bottom div.middle {
+    background: #fff2ad;
+    margin-right: 20px;
+    text-align: center;
+    width: 370px;
+    height: 550px;
+}
+section.solutions section.wrapper div.bottom div.middle div.item {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+}
+section.solutions section.wrapper div.bottom div.middle div.item img {
+    margin-top: 10px;
+    width: 30px;
+}
+section.solutions section.wrapper div.bottom div.middle h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+section.solutions section.wrapper div.bottom div.middle p {
+    font-weight: bold;
+}
+section.solutions section.wrapper div.bottom div.middle ul {
+}
+section.solutions section.wrapper div.bottom div.middle ul li {
+    background: #ffcc66;
+    width: 115px;
+    height: 40px;
+    margin-left: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 9px;
+}
+section.solutions section.wrapper div.bottom div.middle ul li a {
+    color: #fff;
+    position: relative;
+    top: 8px;
+}
+section.solutions section.wrapper div.bottom div.middle img {
+    margin-top: 40px;
+}
+section.solutions section.wrapper div.bottom div.right {
+    background: #ffc4b3;
+    text-align: center;
+    height: 550px;
+}
+section.solutions section.wrapper div.bottom div.right div.item {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+}
+section.solutions section.wrapper div.bottom div.right div.item img {
+    margin-top: 15px;
+    margin-left: -1px;
+    width: 30px;
+}
+section.solutions section.wrapper div.bottom div.right h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+section.solutions section.wrapper div.bottom div.right p {
+    font-weight: bold;
+}
+section.solutions section.wrapper div.bottom div.right ul {
+}
+section.solutions section.wrapper div.bottom div.right ul li {
+    background: #ff774c;
+    width: 115px;
+    height: 40px;
+    margin-left: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 9px;
+}
+section.solutions section.wrapper div.bottom div.right ul li a {
+    color: #fff;
+    position: relative;
+    top: 8px;
+}
+section.solutions section.wrapper div.bottom div.right img {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
